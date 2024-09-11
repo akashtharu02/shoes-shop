@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(to right, #6b20c7, hwb(113 5% 6%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Styles */
+
+        /* Laptops and larger devices */
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .images img {
+                width: 45%;
+            }
+        }
+
+        /* Tablets and small laptops */
+        @media (max-width: 1024px) and (min-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .images img {
+                width: 60%;
+            }
+        }
+
+        /* Mobile devices */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .images {
+                flex-direction: column;
+                align-items: center;
+            }
+            .images img {
+                width: 80%;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .images img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You Can Make Payments Here Using eSewa or Khalti</h1>
+        <div class="images">
+            <img src="image/esewa.png" alt="eSewa: 9822483959">
+            <img src="image/khalti.png" alt="Khalti: 9822483959">
+        </div>
+    </div>
+</body>
+</html>
